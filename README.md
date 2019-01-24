@@ -24,3 +24,9 @@ Make sure to install npm, webpack, webpack-cli globally.
 ```npm install --save-dev webpack```
 
 ```npm install --save-dev webpack-cli```
+
+### Deployment
+
+1. Login your Meta Mask Account
+2. Go to the project directory and run ```npm run start``` in the terminal.
+3. Select the Ropsten Network in MetaMask.
