@@ -7,6 +7,5 @@ Described permission level for each function i.e. external, internal, public, an
 Issued the owneship and administrative privileges to the owner-specific function.
 
 ## Optimizing Usage of Loops
-Avoided loops as this dapp doesn't required it and there is no point in forcibly adding it as they make contract more vulnerable to attacks
+Avoided loops as this dapp currently at this stage doesn't require it and there is no point in forcibly adding it as they make contract more vulnerable to attacks
 
-##
