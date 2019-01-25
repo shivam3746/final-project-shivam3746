@@ -9,3 +9,4 @@ The factory is used for storing the child contracts’ addresses so that they ca
 A common use case for the Factory contract is selling assets and keeping track of those assets (eg. who is the owner). To sell an asset you add the payable modifier to the functions responsible for deploying the assets.
 
 This pattern seems suitable for my certificate issuing dapp as it has to keep the track of all the certificates it will issue just like this factory contract keeps track of its issued assets.
+Moreover it will also able to give the command to the owner to issue a certificate to their respective recipient which will increase the control of the process flow over the contract for the owner. 
