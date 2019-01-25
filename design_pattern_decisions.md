@@ -1,4 +1,6 @@
-*Factory Contract
+# Design Pattern
+
+## Factory Contract
 
 Factory contract is used to create and deploy “child” contracts. Those child contracts can be referred to as “assets” which in the real life could represent, say, a house or a car.
 
