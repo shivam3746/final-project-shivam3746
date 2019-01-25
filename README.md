@@ -30,3 +30,6 @@ Make sure to install npm, webpack, webpack-cli globally.
 1. Login your Meta Mask Account
 2. Go to the project directory and run ```npm run start``` in the terminal.
 3. Select the Ropsten Network in MetaMask.
+
+#### Note-:
+This project has also some essential files for integrating uPort(a ownership identity verification dapp) but currently this project is missing functionality of integration with uport as i have plans to integrate it further to allow the usage of this certificate issuing dapp at a wide scope with one time identity verification with push notifications regarding the alerts for the credential issued.  
