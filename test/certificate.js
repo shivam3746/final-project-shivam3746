@@ -1,19 +1,21 @@
-const Certificate = artifacts.require("./Certificate.sol");
-const assert = require('assert');
-let contractInstance
+var Certificate = artifacts.require("./Certificate.sol")
 
-contract ('Certificate', (accounts) => {
+contract('Certificate', (accounts) => {
+
+  let instance
+  let owner = accounts[0]
+  let account = accounts[1]
+
   beforeEach(async () => {
-     contractInstance= await Certificate.deployed()
+    instance = await Certificate.deployed()
   })
 
-  it('should add value to the name', async ()=> {
-
-    await contractInstance.setHolder("0x00000000000000000000000000000000","Jack",1)
-
-    assert.equal("0x00000000000000000000000000000000","Address not stored")
-
-
+  it("should check restriction", async () => {
+    try {
+      let result = await instance.restrictedFunction.call({from: account})
+      assert.equal(result.toString(), owner)
+    } catch (e) {
+      console.log(`${account} is not owner`)
+    }
   })
-
 })
