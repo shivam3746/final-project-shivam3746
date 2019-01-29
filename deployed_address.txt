@@ -1,0 +1,4 @@
+Deployed Address -: 0x62e586bea3915782d5cf882bf08376cf47
+Deployed Network -: Ropsten
+Screenshot is provided as an assistance to this deployment in order to proof its existence.
+You can crosscheck by viewing the contract_verification.png file in the screenshot folder.
