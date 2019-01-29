@@ -1,5 +1,7 @@
 var Certificate = artifacts.require("./Certificate.sol")
 
+//This test will check whether account is owner or not
+//if passed it will result in 'account is not owner'
 contract('Certificate', (accounts) => {
 
   let instance
