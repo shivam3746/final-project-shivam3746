@@ -9,9 +9,10 @@ contract('Certificate', (accounts) => {
   let account = accounts[1]
 
   beforeEach(async () => {
+    //getting instance
     instance = await Certificate.deployed()
   })
-
+   
   it("should check restriction", async () => {
     try {
       let result = await instance.restrictedFunction.call({from: account})
