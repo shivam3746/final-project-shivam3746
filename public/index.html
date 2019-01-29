@@ -189,14 +189,14 @@
 ]
       var contractAddress = "0xb41cc5431f420eef7e8d50ff1553a801250846d6";
       async function init(){
-        Hashcademy = await new web3.eth.Contract(abi, contractAddress);
+        Blockcademy = await new web3.eth.Contract(abi, contractAddress);
         var accounts = await web3.eth.getAccounts();
         web3.eth.defaultAccount = accounts[0];
       }
       init();
 
       async function count(){
-        Hashcademy.methods.countHolders().call().then(function(result){
+        Blockcademy.methods.countHolders().call().then(function(result){
           document.getElementById('countHolders').textContent = result;
         });
 
@@ -205,7 +205,7 @@
       async function register(){
         var fullName = web3.utils.asciiToHex(document.getElementById('fullName').value);
         var levelOfStudy = document.getElementById('levelOfStudy').value;
-        Hashcademy.methods.setHolder(web3.eth.defaultAccount, fullName, levelOfStudy).send({from: web3.eth.defaultAccount, gas: 3000000}).on('receipt', function(receipt){
+        Blockcademy.methods.setHolder(web3.eth.defaultAccount, fullName, levelOfStudy).send({from: web3.eth.defaultAccount, gas: 3000000}).on('receipt', function(receipt){
           document.getElementById('error').style.display = 'none';
           document.getElementById('blockHash').textContent = receipt.blockHash;
           document.getElementById('name').textContent = web3.utils.hexToAscii(receipt.events.HolderInfo.returnValues.name);
