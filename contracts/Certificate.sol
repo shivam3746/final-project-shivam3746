@@ -19,6 +19,7 @@ contract Owned{
     
 }
 /** @title Certificate. */
+//Inheriting from the contract Owned
 contract Certificate is Owned{
     struct Holder{
         bytes16 name;
