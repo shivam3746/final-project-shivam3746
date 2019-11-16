@@ -10,7 +10,7 @@ Screenshots are provided for better observations.
 
 So, Ramesh is a front-end developer by profession , one day he decided to upgrade his skills and he took some time and took an online course on blockchain .Upon successful completion of the course Ramesh received
 a certificate from the organisation which but the organisation offered two ways to receive credential in which he had to opt one.
-1. Receive a pdf of the ceritificate
+1. Receive a pdf of the certificate
 2. Receive your certificate on the blockchain network
 Ramesh made a smart move by opting the second option as in this he has not to worry about his authneticity with the credential 
 He has not to worry about where to safely store the credential.As Credential is forever registered on the blockchain network.
